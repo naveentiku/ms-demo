@@ -9,7 +9,16 @@ Information about the Food Trucks and its location is provided in a csv file.
 This project follows the Model,View and Controller pattern and has been developed as java springboot WebAPI.
  
  #### -Controller
-   
-* **LocationController.java** : This program serves as controller and implements 2 methods 
+* package : package com.ms.demo.controller;
+* Class : **LocationController.java**\
+         This program serves as controller and implements 2 methods 
 
-   *  loadTruckLocation(): This method loads csv file as in memory cache as key value pair in a map where **key**="latitude"+"longitude" and **value**= csv row for that       latitude and longitude  as an object. This map is stored as singleton.This method uses apache libraries to read the csv file and store it as                              MAP.
+   *  loadTruckLocation(): This method loads csv file in memory cache as key value pair map where\
+      **key**="latitude"+"longitude"\
+      **value**= csv row for that latitude and longitude as an object.\
+      This map is stored as singleton so to read the file only 1 time and cache it in memory.Method uses Apache libraries to read csv file and store it as MAP.This             method also returns a unique list of "latitude"+"longitude" for populating the location search combo in the UI aka View.Comments have been made in source code to         describe the action.
+      
+   *  searchLocations(): This method takes selected "latitude"+"longitude" input value from the view and searches the cached map for a match and return the selected       records/objects  for rendering the search result on the UI.This search result will be the list of trucks in the selected  "latitude" and "longitude"
+      
+ #### -Model
+ * package : com.ms.demo.model
