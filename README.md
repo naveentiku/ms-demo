@@ -48,4 +48,12 @@ Idea has been to read the file and store it in memory using singleton pattern so
    * com.opencsv
    * org.apache.commons.collections4
    * Java 11
- 
+   
+#### How to run
+*  Deployable unit of this project is an executable jar with embbeded tomcat server.(location in GitHUB)
+*  run executable jar with following command
+   *  java -jar target/TruckLocation.jar
+   *  Once Application starts you will see a message similar to this on console "main] com.ms.demo.MSTruckDemoApp  : Started MSTruckDemoApp in 1.874 seconds (JVM running       for 2.339)"
+*  Access the application with following URL :http://127.0.0.1:8080/TruckLocation
+   *  Pls ensure no other process is already running on this port.
+
