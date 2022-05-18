@@ -22,3 +22,7 @@ This project follows the Model,View and Controller pattern and has been develope
       
  #### -Model
  * package : com.ms.demo.model
+ * Class : **LocationSelection.java**\
+           This Class object is used to store search criteria to search truck location.
+ * Class : **TruckLocation**\
+           This class object has properties that are mapped to the required colums of the CSV file to store CSV per row record in 1 instance of this class.
