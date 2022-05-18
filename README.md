@@ -27,7 +27,9 @@ This project follows the Model,View and Controller pattern and has been develope
  * Class : **TruckLocation**\
            This class object has properties that are mapped to the required colums of the CSV file to store CSV per row record in 1 instance of this class. objects                  instances or Collection of object insance of this class will be returned to be rendered on ui\view
            
- #### -view
+ #### -Helper
+           
+ #### -View
  * **Trucklocation.html** : This html loads search combo with "latitude"+"longitude" as search criteria as returned from controller method loadTruckLocation() which returns    unique list of "latitude"+"longitude" extracted out from csv file.
  
  * **SearchResult.html** : This html file displays the search results returned from searchLocations() method of the controller class matching the search criteria.
