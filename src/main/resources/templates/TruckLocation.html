@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Search Truck Location</title>
+</head>
+<body>
+<p style="font-size:30px">Search Truck Location</p>
+</br>
+<div class="col-lg-3" th:object="${location}">
+<form th:action="@{/TruckLocation}" th:object="${LocationSelection}" method="POST">
+
+   <table border="0">
+   <td>Select latitude:longitude</td>
+   </tr>
+   <td>
+    <select class="form-control" id="location" name="selection" required th:field="*{selection}">
+        <option value="">Select Location</option>
+        <option  th:each="locale : ${location}"
+                th:value="|${locale.latitude}${locale.longitude}"
+                th:text="${locale.latitude}+' : '+${locale.longitude}"></option>
+    </select>
+    </td>
+    </tr>
+     <td>
+        <button type="submit">Search</button>  
+      </td>  
+</form>
+</div>
+
+</body>
+</html>
