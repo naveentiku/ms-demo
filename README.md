@@ -52,9 +52,9 @@ Idea has been to read the file and store it in memory using singleton pattern so
 #### How to run
 *  Deployable unit of this project is an executable jar with embbeded tomcat server.(location in GitHUB)
 *  run executable jar with following command
-   *  'java -jar target/TruckLocation.jar'  from the location where jar is copied.
+   *  **java -jar target/TruckLocation.jar**  from the location where jar is copied.
    *  Once Application starts you will see a message similar to this on console "main] com.ms.demo.MSTruckDemoApp  : Started MSTruckDemoApp in 1.874 seconds (JVM running       for 2.339)"
-*  Access the application with following URL :http://127.0.0.1:8080/TruckLocation
+*  Access the application with following URL: http://127.0.0.1:8080/TruckLocation
    *  Ensure no other process is already running on this port.
    *  Please use browser back button to go back to search page.
    *  I have not implemented storing of log in a log file due to lack of time, so error messages if any will be printed on console.
