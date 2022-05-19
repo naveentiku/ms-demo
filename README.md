@@ -50,9 +50,10 @@ Idea has been to read the file and store it in memory using singleton pattern so
    * com.opencsv
    * org.apache.commons.collections4
    * Java 11
+   * Project Source code is available in the master branch
    
 #### How to run
-*  TruckLocation.jar is an executable jar with embbeded tomcat server so can be tested as standalone program located in main branch.
+*  TruckLocation.jar is an executable jar with embbeded tomcat server so can be tested as standalone program located in **main branch**.
 *  Install java if already not present.
 *  download and run executable jar with following command
    *  **java -jar target/TruckLocation.jar**  from the location where jar is copied.
