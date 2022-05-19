@@ -57,4 +57,5 @@ Idea has been to read the file and store it in memory using singleton pattern so
 *  Access the application with following URL :http://127.0.0.1:8080/TruckLocation
    *  Ensure no other process is already running on this port.
    *  Please use browser back button to go back to search page.
+   *  I have not implemented storing of log in a log file due to lack of time, so error messages if any will be printed on console.
 
